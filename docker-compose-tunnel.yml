@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  cloudflared:
+    container_name: no-camunda-tunnel
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TUNNEL_TOKEN}
+    network_mode: host
+    env_file:
+      - .env
+    restart: unless-stopped
