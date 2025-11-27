@@ -3,7 +3,7 @@ Get the token from cloudflare.
 
 Command to run this:
 
-```docker compose -f /home/themis/coding/tools/cloudflare-tunnel/docker-compose-tunnel.yml up -d
+```bash
+docker compose -f /home/themis/coding/tools/cloudflare-tunnel/docker-compose-tunnel.yml up -d
 ```
-```
-```
+
